@@ -1,5 +1,5 @@
-export class Article {
-  nome: string;
+export class utente{
+  username: string;
   password : string;
   
 }

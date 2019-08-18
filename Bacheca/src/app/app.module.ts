@@ -8,11 +8,13 @@ import {   //Importare le funzionalità nella nostra applicazione
 
 import { AppComponent } from './app.component';
 import { FormRegistrazioneComponent } from './form-registrazione/form-registrazione.component';
+import { FormVisuaComponent } from './form-visua/form-visua.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormRegistrazioneComponent
+    FormRegistrazioneComponent,
+    FormVisuaComponent
   ],
   imports: [
     BrowserModule, FormsModule,  //Anche qui

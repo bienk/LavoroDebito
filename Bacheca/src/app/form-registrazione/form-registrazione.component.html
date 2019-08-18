@@ -18,24 +18,28 @@
 
 <div class="container">
     
-  <form  class="jumbotron">
+  <form [formGroup] = "formRegistrazione" (ngOnInit) = "ngOnInit()" class="jumbotron">
       
       <div class="form-group">
-         username: <input type="text" nome="nome"><br>
+          
+         username: <input type="text"[formControl] = "formRegistrazione.controls['username']"><br>
+         
       </div>
       
       <div class="form-group">
-        password: <input type="text" password="password"><br>
+          
+        password: <input type="text" [formControl] = "formRegistrazione.controls['password']"><br>
+        
       </div>
       
      <div style="text-align:center;" style = "size">
-             <button class="btn btn-primary" >
-              registrati 
-            </button>
+         
+        <button class="btn btn-primary" (click) = "addUser(input)"  > registrati </button>
+        
     </div>
     
   
   </form>
   
 </div>
-  
+
